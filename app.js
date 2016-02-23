@@ -32,7 +32,6 @@ app.use('/articles', articles);
 // db connection
 var db = mongoose.connection;
 
-
 db.on('error', console.error.bind(console, 'DB Error: '));
 
 db.once('open', function(callback) {
